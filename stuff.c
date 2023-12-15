@@ -19,14 +19,22 @@
 //   return 0;
 // }
 
-int main()
-{
-  double height;
-  double width;
-  printf("Enter height: ");
-  scanf("%lf", &height);
-  printf("Enter Width: ");
-  scanf("%lf", &width);
-  printf("Area = %lf", height/width);
-  return 0;
+// int main()
+// {
+//   double height, width;
+//   double area;
+//   printf("Enter height: ");
+//   scanf("%lf", &height);
+//   printf("Enter Width: ");
+//   scanf("%lf", &width);
+//   area = height/width;
+//   printf("Area = %lf", area);
+//   return 0;
+// }
+
+int main() {
+  int num1 = 5, num2 = 2;
+  double result;
+  result = (double)num1/num2;
+  printf("Result = %lf", result);
 }
