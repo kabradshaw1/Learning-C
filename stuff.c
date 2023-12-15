@@ -24,9 +24,9 @@ int main()
   double height;
   double width;
   printf("Enter height: ");
-  scanf("%d", &height);
+  scanf("%lf", &height);
   printf("Enter Width: ");
-  scanf("%d", &width);
-  printf("Area = %d", height/width);
+  scanf("%lf", &width);
+  printf("Area = %lf", height/width);
   return 0;
 }
