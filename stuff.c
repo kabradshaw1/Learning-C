@@ -32,9 +32,17 @@
 //   return 0;
 // }
 
+// Here we are changing the type of num1 so that we don't get the limitations of the int type without changing the int type in the variable
+// int main() {
+//   int num1 = 5, num2 = 2;
+//   double result;
+//   result = (double)num1/num2;
+//   printf("Result = %lf", result);
+// }
+
 int main() {
-  int num1 = 5, num2 = 2;
-  double result;
-  result = (double)num1/num2;
-  printf("Result = %lf", result);
+  int grade1 = 90, grade2 = 70, grade3 = 93;
+  double average;
+  average = (grade1 + grade2 + (double)grade3)/3;
+  printf("Average = %lf", average);
 }
