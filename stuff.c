@@ -40,9 +40,17 @@
 //   printf("Result = %lf", result);
 // }
 
+// int main() {
+//   int grade1 = 90, grade2 = 70, grade3 = 93;
+//   double average;
+//   average = (grade1 + grade2 + (double)grade3)/3;
+//   printf("Average = %.2lf", average);
+// }
+
 int main() {
-  int grade1 = 90, grade2 = 70, grade3 = 93;
-  double average;
-  average = (grade1 + grade2 + (double)grade3)/3;
-  printf("Average = %lf", average);
+  double TempC, TempF;
+  printf("Input T(C)");
+  scanf("%lf", &TempC);
+  TempF = TempC*1.8 + 32;
+  printf("The temperature in fehrenheit is: %.2lf", TempF);
 }
