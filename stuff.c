@@ -47,10 +47,18 @@
 //   printf("Average = %.2lf", average);
 // }
 
+// int main() {
+//   double TempC, TempF;
+//   printf("Input T(C)");
+//   scanf("%lf", &TempC);
+//   TempF = TempC*1.8 + 32;
+//   printf("The temperature in fehrenheit is: %.2lf", TempF);
+//   return 0;
+// }
+
 int main() {
-  double TempC, TempF;
-  printf("Input T(C)");
-  scanf("%lf", &TempC);
-  TempF = TempC*1.8 + 32;
-  printf("The temperature in fehrenheit is: %.2lf", TempF);
+  int a_1 = 1, d = 2, n = 9, a_n;
+  a_n = a_1 + (n - 1)*d;
+  printf("%d", a_n);
+  return 0;
 }
