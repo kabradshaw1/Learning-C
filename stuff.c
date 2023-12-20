@@ -63,17 +63,28 @@
 //   return 0;
 // }
 
-int main() {
-  float a_1, a_n, s_n;
-  int n;
-  printf("input a_1: ");
-  scanf("%f", &a_1);
-  printf("Input n: ");
-  scanf("%d", &n);
-  printf("Input a_n: ");
-  scanf("%f", &a_n);
+// int main() {
+//   float a_1, a_n, s_n;
+//   int n;
+//   printf("input a_1: ");
+//   scanf("%f", &a_1);
+//   printf("Input n: ");
+//   scanf("%d", &n);
+//   printf("Input a_n: ");
+//   scanf("%f", &a_n);
 
-  s_n = (a_1 + a_n)*n/2;
-  printf("s_n equals %.2f", s_n);
-  return 0;
+//   s_n = (a_1 + a_n)*n/2;
+//   printf("s_n equals %.2f", s_n);
+//   return 0;
+// }
+
+int main() {
+  float hourly, thours, salary;
+  printf("Input hourly rate: ");
+  scanf("%f", &hourly);
+  printf("Input total hours worked in a month: ");
+  scanf("%f", &thours);
+
+  salary = thours*hourly;
+  printf("Your salary for the month is %f", salary);
 }
