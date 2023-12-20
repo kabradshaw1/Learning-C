@@ -89,12 +89,25 @@
 //   printf("Your salary for the month is %f", salary);
 // }
 
+// int main() {
+//   float distance, speed, time;
+//   printf("Input distance: ");
+//   scanf("%f", &distance);
+//   printf("Input speed: ");
+//   scanf("%f", &speed);
+//   printf("The time to reach your destination is %.2f hours", distance/speed);
+//   return 0;
+// }
+
 int main() {
-  float distance, speed, time;
-  printf("Input distance: ");
-  scanf("%f", &distance);
-  printf("Input speed: ");
-  scanf("%f", &speed);
-  printf("The time to reach your destination is %.2f hours", distance/speed);
+  int seconds, hours, minutes, rseconds;
+  printf("input seconds: ");
+  scanf("%d", &seconds);
+  hours = seconds/3600;
+  printf("hours = %d \n", hours);
+  minutes = (seconds - hours*3600)/60;
+  printf("minutes = %d \n", minutes);
+  rseconds = seconds - hours*3600 - minutes*60;
+  printf("second = %d \n", rseconds);
   return 0;
 }
