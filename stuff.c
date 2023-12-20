@@ -78,13 +78,23 @@
 //   return 0;
 // }
 
-int main() {
-  float hourly, thours, salary;
-  printf("Input hourly rate: ");
-  scanf("%f", &hourly);
-  printf("Input total hours worked in a month: ");
-  scanf("%f", &thours);
+// int main() {
+//   float hourly, thours, salary;
+//   printf("Input hourly rate: ");
+//   scanf("%f", &hourly);
+//   printf("Input total hours worked in a month: ");
+//   scanf("%f", &thours);
 
-  salary = thours*hourly;
-  printf("Your salary for the month is %f", salary);
+//   salary = thours*hourly;
+//   printf("Your salary for the month is %f", salary);
+// }
+
+int main() {
+  float distance, speed, time;
+  printf("Input distance: ");
+  scanf("%f", &distance);
+  printf("Input speed: ");
+  scanf("%f", &speed);
+  printf("The time to reach your destination is %.2f hours", distance/speed);
+  return 0;
 }
