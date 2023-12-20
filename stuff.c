@@ -56,9 +56,24 @@
 //   return 0;
 // }
 
+// int main() {
+//   int a_1 = 1, d = 2, n = 9, a_n;
+//   a_n = a_1 + (n - 1)*d;
+//   printf("%d", a_n);
+//   return 0;
+// }
+
 int main() {
-  int a_1 = 1, d = 2, n = 9, a_n;
-  a_n = a_1 + (n - 1)*d;
-  printf("%d", a_n);
+  float a_1, a_n, s_n;
+  int n;
+  printf("input a_1: ");
+  scanf("%f", &a_1);
+  printf("Input n: ");
+  scanf("%d", &n);
+  printf("Input a_n: ");
+  scanf("%f", &a_n);
+
+  s_n = (a_1 + a_n)*n/2;
+  printf("s_n equals %.2f", s_n);
   return 0;
 }
