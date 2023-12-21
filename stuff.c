@@ -99,15 +99,32 @@
 //   return 0;
 // }
 
+// int main() {
+//   int seconds, hours, minutes, rseconds;
+//   printf("input seconds: ");
+//   scanf("%d", &seconds);
+//   hours = seconds/3600;
+//   printf("hours = %d \n", hours);
+//   minutes = (seconds - hours*3600)/60;
+//   printf("minutes = %d \n", minutes);
+//   rseconds = seconds - hours*3600 - minutes*60;
+//   printf("second = %d \n", rseconds);
+//   return 0;
+// }
+
+// int main() {
+//   float data;
+//   printf("input data: ");
+//   scanf("%f", &data);
+//   int data1 = data;
+//   float data2 = data - data1;
+//   printf("%f", data2);
+//   return 0;
+// }
+
 int main() {
-  int seconds, hours, minutes, rseconds;
-  printf("input seconds: ");
-  scanf("%d", &seconds);
-  hours = seconds/3600;
-  printf("hours = %d \n", hours);
-  minutes = (seconds - hours*3600)/60;
-  printf("minutes = %d \n", minutes);
-  rseconds = seconds - hours*3600 - minutes*60;
-  printf("second = %d \n", rseconds);
-  return 0;
+  float data;
+  printf("input data: ");
+  scanf("%f", &data);
+  printf("%.1f", data - (int)data);
 }
