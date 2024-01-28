@@ -157,17 +157,24 @@
 //   return 0;
 // }
 
+// int main() {
+//   float x1, x2, y1, y2;
+//   printf("Input x for point 1: ");
+//   scanf("%f", &x1);
+//   printf("Input y for point 1: ");
+//   scanf("%f", &y1);
+//   printf("Input x for point 2: ");
+//   scanf("%f", &x2);
+//   printf("Input y for point 2: ");
+//   scanf("%f", &y2);
+//   float distance = sqrt((x1-x2) * (x1-x2) + (y1-y2) * (y1-y2));
+//   printf("%f", distance);
+//   return 0;
+// }
+
 int main() {
-  float x1, x2, y1, y2;
-  printf("Input x for point 1: ");
-  scanf("%f", &x1);
-  printf("Input y for point 1: ");
-  scanf("%f", &y1);
-  printf("Input x for point 2: ");
-  scanf("%f", &x2);
-  printf("Input y for point 2: ");
-  scanf("%f", &y2);
-  float distance = sqrt((x1-x2) * (x1-x2) + (y1-y2) * (y1-y2));
-  printf("%f", distance);
-  return 0;
+  float x;
+  printf("input x");
+  scanf("%f", &x);
+  printf("%f %f %f %f", x*x, x*x*x*x, x*x*x*x*x*x, x*x*x*x*x*x*x*x);
 }
