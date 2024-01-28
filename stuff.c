@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <math.h>
 // int main()
 // {
 //   printf("*     *\n *   *\n  * *\n   *\n  * *\n *   *\n*     *\n");
@@ -145,14 +145,29 @@
 //   return 0;
 // }
 
-int main() {
-  int num, units, tens, hundreds;
-  printf("Input a three digit number: ");
-  scanf("%d", &num);
-  units = num % 10;
-  tens = (num / 10) % 10;
-  hundreds = num / 100;
+// int main() {
+//   int num, units, tens, hundreds;
+//   printf("Input a three digit number: ");
+//   scanf("%d", &num);
+//   units = num % 10;
+//   tens = (num / 10) % 10;
+//   hundreds = num / 100;
 
-  printf("%d%d%d", hundreds, tens, units );
+//   printf("%d%d%d", hundreds, tens, units );
+//   return 0;
+// }
+
+int main() {
+  float x1, x2, y1, y2;
+  printf("Input x for point 1: ");
+  scanf("%f", &x1);
+  printf("Input y for point 1: ");
+  scanf("%f", &y1);
+  printf("Input x for point 2: ");
+  scanf("%f", &x2);
+  printf("Input y for point 2: ");
+  scanf("%f", &y2);
+  float distance = sqrt((x1-x2)^2 + (y1-y2)^2);
+  printf("%f", distance);
   return 0;
 }
