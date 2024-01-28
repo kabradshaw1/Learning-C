@@ -167,7 +167,7 @@ int main() {
   scanf("%f", &x2);
   printf("Input y for point 2: ");
   scanf("%f", &y2);
-  float distance = sqrt((x1-x2)^2 + (y1-y2)^2);
+  float distance = sqrt((x1-x2) * (x1-x2) + (y1-y2) * (y1-y2));
   printf("%f", distance);
   return 0;
 }
